@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fond_portrait"
+    android:orientation="vertical" >    
+    
+    <TextView
+	    android:id="@+id/lblNom"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="80dp"
+		android:layout_marginLeft="70dp"
+		android:textSize="40sp"
+		android:text="@string/nom_mission"
+		android:textColor="#ffffff"/>
+
+   <TextView
+	    android:id="@+id/txtNom"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="80dp"
+	    android:layout_marginLeft="410dp"
+	    android:textSize="40sp"
+	    android:textColor="#e3e3e3"/>   
+    
+    <TextView
+	    android:id="@+id/lblEmail"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="140dp"
+		android:layout_marginLeft="70dp"
+		android:textSize="40sp"
+		android:text="@string/email_mission"
+		android:textColor="#ffffff"/>
+    
+    <TextView
+	    android:id="@+id/txtEmail"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="140dp"
+	    android:layout_marginLeft="410dp"
+	    android:textSize="40sp"
+	    android:textColor="#e3e3e3"/>    
+    
+    <TextView
+	    android:id="@+id/lblRetourDepart"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="200dp"
+		android:layout_marginLeft="70dp"
+		android:textSize="40sp"
+	    android:text="@string/edit_retour_robot" 
+	    android:textColor="#ffffff"/>
+    
+    <TextView
+	    android:id="@+id/lblPhotoArrivee"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="260dp"
+		android:layout_marginLeft="70dp"
+		android:textSize="40sp"
+	    android:text="@string/edit_photo" 
+	    android:textColor="#ffffff"/>
+    
+   	<CheckBox
+		android:id="@+id/cbxRetourDepart"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblRetourDepart"
+        android:layout_alignBottom="@+id/lblRetourDepart"
+        android:layout_alignLeft="@+id/txtEmail"
+        android:layout_alignParentRight="true"
+        android:enabled="false"
+        android:text="@string/oui"
+        android:textSize="40sp"
+        android:textColor="#ffffff"
+        android:button="@drawable/checkbox"/>
+    	
+    <CheckBox
+		android:id="@+id/cbxPhotoArrivee"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignBaseline="@+id/lblPhotoArrivee"
+        android:layout_alignBottom="@+id/lblPhotoArrivee"
+        android:layout_alignLeft="@+id/cbxRetourDepart"
+        android:enabled="false"
+        android:text="@string/oui"
+        android:textSize="40sp"
+        android:textColor="#ffffff"
+        android:button="@drawable/checkbox"/>
+    
+   	<com.kercar.osmandroid.OSMAndroid
+	   android:id="@+id/OSM_recap"
+	   android:layout_width="700dp"
+	   android:layout_height="600dp"
+	   android:layout_centerHorizontal="true"
+	   android:layout_marginTop="340dp"/>
+       	
+    <Button
+	    android:id="@+id/btnOK"
+	    android:layout_width="150dp"
+	    android:layout_height="80dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="1000dp"
+		android:text="@string/button_OK"
+		android:textSize="40sp"
+		android:textColor="#ffffff"/>
+
+</RelativeLayout>

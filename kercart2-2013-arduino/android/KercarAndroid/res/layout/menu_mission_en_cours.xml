@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fond_portrait"
+    android:orientation="vertical" >
+    
+   	<TextView
+	    android:id="@+id/latitude"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="40dp"
+		android:layout_marginLeft="20dp"
+		android:textSize="15sp"
+		android:text="@string/latitude"
+		android:textColor="#ffffff"/>
+
+   <TextView
+	    android:id="@+id/latitudeEdit"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="40dp"
+	    android:layout_marginLeft="150dp"
+	    android:textSize="15sp"
+	    android:textColor="#e3e3e3"/>   
+    
+    <TextView
+	    android:id="@+id/longitude"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="80dp"
+		android:layout_marginLeft="20dp"
+		android:textSize="15sp"
+		android:text="@string/longitude"
+		android:textColor="#ffffff"/>
+    
+    <TextView
+	    android:id="@+id/longitudeEdit"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="150dp"
+	    android:layout_marginTop="80dp"
+	    android:textSize="15sp"
+	    android:textColor="#e3e3e3"/>
+    
+    <TextView
+	    android:id="@+id/boussole"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="120dp"
+		android:layout_marginLeft="20dp"
+		android:textSize="15sp"
+		android:text="@string/boussole"
+		android:textColor="#ffffff"/>
+    
+    <TextView
+	    android:id="@+id/boussoleEdit"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="150dp"
+	    android:layout_marginTop="120dp"
+	    android:textSize="15sp"
+	    android:textColor="#e3e3e3"/>
+    
+    <com.kercar.osmandroid.OSMAndroid
+	   android:id="@+id/OSM_mission_cours"
+	   android:layout_width="280dp"
+	   android:layout_height="200dp"
+	   android:layout_marginTop="160dp"
+	   android:layout_centerHorizontal="true"/>
+    
+    <Button
+        android:id="@+id/button_arreter"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="400dp"
+        android:text="@string/button_arreter_mission"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Programme Kercar -->
+    <string name="app_name">KerCar</string>
+    <string name="app_version">v1.0</string>
+    <string name="menu_settings">Settings</string>
+    
+    <!-- Ressources Partagees -->
+    <string name="empty">empty</string>
+    <string name="button_OK">OK</string>
+    <string name="button_suivant">Suivant</string>
+    <string name="button_annuler">Annuler</string>
+    <string name="button_supprimer">Supprimer</string>
+    <string name="oui">Oui</string>
+    
+    <!-- Menu Start -->
+    <string name="button_start">Start</string>
+    <string name="button_about">About</string>
+    <string name="image_menu_start">imageMenuStart</string>
+    
+    <!-- Menu Selection -->
+    <string name="button_commandes_manuelles">Commander Manuellement</string>
+    <string name="button_creation_edition_mission">Créer/Editer une Mission</string>
+    <string name="button_lancer_mission">Lancer une Mission</string>
+    <string name="button_arreter_mission">Arrêter la Mission</string>
+    
+    <!-- Menu Creation Mission -->   
+    <string name="edit_nom_edit">Saisie du nom</string>
+    <string name="edit_nom">Saisie du nom :</string>
+    <string name="edit_email_edit">Saisie de l e-mail </string>
+    <string name="edit_email">Saisie de l e-mail :</string>
+    <string name="edit_photo">Photo Arrivee :</string>
+    <string name="edit_retour_robot">Retour du robot :</string>
+    <string name="createMission">Creer une nouvelle mission</string>
+    <string name="syntax_error">Erreur Syntaxique</string>
+    
+    <!-- Menu Choix Point Arrive -->
+    <string name="demande_point_arrive">Veuillez choisir le point d\'arrivée du robot</string>
+    
+    <!-- Menu Recapitulatif Mission -->
+    <string name="nom_mission">Mission :</string>
+    <string name="email_mission">Email :</string>
+    
+    <!-- Menu Mission en Cours -->
+    <string name="latitude">Latitude :</string>
+    <string name="longitude">Longitude :</string>
+    <string name="boussole">Boussole :</string>
+    
+    <!-- Nom de l'équipe -->
+    <string name="gael">Gaël GOINVIC</string>
+    <string name="quentin">Quentin DE GRANDMAISON</string>
+    <string name="clement">Clement RIVAILLE</string>
+    <string name="guillaume">Guillaume MARREC</string>
+    <string name="loulou">Lou-Anne AUDEBERT</string>
+    <string name="yasser">Yasser LAMSAOUGAR</string>
+    <string name="xavier">Xavier CAILLAT</string>
+    <string name="manu">Emmanuel BILHEUDE</string>
+    <string name="lama">Lama RIHAN</string>
+    <string name="anass">Anass ASBAHI</string>
+    <string name="brice">Brice PEPIN</string>
+    <string name="florian">Florian DUROS</string>
+    <string name="omar">Omar EL KHALDI</string>
+    <string name="olivier">Olivier BARAIS</string>
+    <string name="benoit">Benoit COMBEMALE</string>
+    <string name="johann">Johann BOURCIER</string>
+    
+</resources>
