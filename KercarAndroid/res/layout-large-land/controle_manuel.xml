@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <Button
+        android:id="@+id/buttonAvance"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="70dp"
+        android:background="@drawable/fleche_haut"/>
+   
+    <Button
+        android:id="@+id/buttonDroite"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/buttonAvance"
+        android:layout_toRightOf="@id/buttonAvance"
+        android:background="@drawable/fleche_droite"/>
+
+    <Button
+        android:id="@+id/buttonRecule"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toLeftOf="@id/buttonDroite"
+        android:layout_below="@id/buttonDroite"
+        android:background="@drawable/fleche_bas"/>
+    
+    <Button
+        android:id="@+id/buttonGauche"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/buttonAvance"
+        android:layout_toLeftOf="@id/buttonRecule"
+        android:background="@drawable/fleche_gauche"/>
+    
+     <com.kercar.osmandroid.OSMAndroid
+        android:id="@+id/OSM"
+        android:layout_width="400dp"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+     <Button
+         android:id="@+id/buttonPhoto"
+         android:layout_width="100dp"
+         android:layout_height="100dp"
+         android:background="@drawable/buttonphoto"
+         android:layout_marginTop="30dp"
+         android:layout_marginLeft="50dp" />
+
+     <SeekBar
+         android:id="@+id/barVitesse"
+         android:layout_width="350dp"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="-80dp"
+         android:rotation="270" />
+
+</RelativeLayout>
