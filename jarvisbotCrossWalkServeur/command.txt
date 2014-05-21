@@ -1,0 +1,1 @@
+python make_apk.py --manifest=C:\Users\Richard\Documents\GitHub\robotesir\jarvisbotCrossWalkServeur\jarvisbotCrossWalkServeurApp\manifest.json
