@@ -17,6 +17,7 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 
+
 public class MenuMissionEnCours extends Activity{
 	//Attributs
 	private Button arreter;

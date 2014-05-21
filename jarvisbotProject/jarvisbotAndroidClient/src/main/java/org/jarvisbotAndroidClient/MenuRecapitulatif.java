@@ -7,6 +7,7 @@ import org.jarvisbotAndroidClient.AsyncTask.AsyncLancerMission;
 import org.jarvisbotLibrary.android.ComAndroid;
 import org.jarvisbotLibrary.android.IComAndroid;
 
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
