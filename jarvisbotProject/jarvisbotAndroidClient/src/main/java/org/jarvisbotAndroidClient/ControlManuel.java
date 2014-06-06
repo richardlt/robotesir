@@ -91,7 +91,7 @@ public class ControlManuel extends Activity{
 				PackageManager pm = getPackageManager();
 				List<PackageInfo> lis = pm.getInstalledPackages(0);
 				for(int j = 0; j < lis.size(); j++){
-					Log.v("simple",lis.get(j).packageName);
+					Log.v("jarvisbotvisioappliclient",lis.get(j).packageName);
 				}
 				boolean app_installed = false;
 				try {
@@ -105,15 +105,15 @@ public class ControlManuel extends Activity{
 			}
 
 			public void onClick(View v) {
-				if(!appInstalledOrNot("org.xwalk.simple")){
-					Log.v("simple", "pasinstalle");
+				if(!appInstalledOrNot("org.xwalk.jarvisbotvisioappliclient")){
+					Log.v("jarvisbotvisioappliclient", "pasinstalle");
 					try {
-						InputStream in = ControlManuel.this.getResources().openRawResource(R.drawable.simple_arm);
+						InputStream in = ControlManuel.this.getResources().openRawResource(R.drawable.jarvisbotvisioappliclient_arm);
 
 						byte[] b = new byte[in.available()];
 						int read = in.read(b);
 
-						String tempFileName = "simple_arm.apk";
+						String tempFileName = "jarvisbotvisioappliclient_arm.apk";
 						FileOutputStream fout = openFileOutput(tempFileName, MODE_WORLD_READABLE);
 
 						fout.write(b);      
@@ -125,18 +125,18 @@ public class ControlManuel extends Activity{
 						Intent intent = new Intent(Intent.ACTION_VIEW);
 						intent.setDataAndType(Uri.fromFile(tempFile), "application/vnd.android.package-archive");
 
-						startActivity(Intent.createChooser(intent, "simple"));
+						startActivity(Intent.createChooser(intent, "jarvisbotvisioappliclient"));
 					}
 					catch (Exception ex){
 						Log.e("ero", "erer", ex);
 					}
 				}
 				else{
-					Log.v("simple", "installe");
+					Log.v("jarvisbotvisioappliclient", "installe");
 					Intent i;
 					PackageManager manager = getPackageManager();
 					try {
-					    i = manager.getLaunchIntentForPackage("org.xwalk.simple");
+					    i = manager.getLaunchIntentForPackage("org.xwalk.jarvisbotvisioappliclient");
 					    if (i == null){
 					        throw new PackageManager.NameNotFoundException();
 					    }
